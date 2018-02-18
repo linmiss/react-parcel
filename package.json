@@ -1,0 +1,55 @@
+{
+  "name": "react-parcel",
+  "version": "1.0.0",
+  "description": "this is a react parcel min usable demo",
+  "main": "index.js",
+  "lint-staged": {
+    "src/**/*.{js,jsx,css,scss,json}": [
+      "prettier --config .prettierrc --write",
+      "git add"
+    ]
+  },
+  "scripts": {
+    "start": "parcel -p 8080 index.html",
+    "build": "parcel build index.js",
+    "prettier": "prettier --config .prettierrc --write 'src/**/*.{js,jsx,css,scss,json}'",
+    "pre-commit": "lint-staged",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/linmiss/react-parcel.git"
+  },
+  "keywords": [
+    "react",
+    "parcel"
+  ],
+  "author": "Tim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/linmiss/react-parcel/issues"
+  },
+  "homepage": "https://github.com/linmiss/react-parcel#readme",
+  "devDependencies": {
+    "babel-eslint": "^8.2.1",
+    "eslint": "^4.18.0",
+    "eslint-config-react-app": "^2.1.0",
+    "eslint-plugin-flowtype": "^2.44.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-prettier": "^2.6.0",
+    "eslint-plugin-react": "^7.6.1",
+    "husky": "^0.14.3",
+    "lint-staged": "^6.1.1",
+    "parcel-bundler": "^1.6.1",
+    "prettier": "^1.10.2"
+  },
+  "dependencies": {
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "node-sass": "^4.7.2",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-router-dom": "^4.2.2"
+  }
+}
