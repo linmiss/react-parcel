@@ -10,8 +10,8 @@
     ]
   },
   "scripts": {
-    "start": "parcel -p 8080 -d dev index.html",
-    "build": "parcel build -d build index.js",
+    "start": "parcel -p 8080 index.html",
+    "build": "parcel build index.js",
     "prettier": "prettier --config .prettierrc --write 'src/**/*.{js,jsx,css,scss,json}'",
     "pre-commit": "lint-staged",
     "test": "echo \"Error: no test specified\" && exit 1"
