@@ -11,7 +11,7 @@
   },
   "scripts": {
     "start": "parcel -p 8080 index.html",
-    "build": "parcel build index.js",
+    "build": "parcel build index.js --public-url ./",
     "prettier": "prettier --config .prettierrc --write 'src/**/*.{js,jsx,css,scss,json}'",
     "pre-commit": "lint-staged",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -45,9 +45,11 @@
     "prettier": "^1.10.2"
   },
   "dependencies": {
+    "autoprefixer": "^8.0.0",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
     "node-sass": "^4.7.2",
+    "postcss-modules": "^1.1.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-router-dom": "^4.2.2"
