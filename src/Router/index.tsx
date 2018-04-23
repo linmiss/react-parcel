@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import * as React from 'react'
 import {
   BrowserRouter as Router,
   Route,
@@ -7,7 +7,7 @@ import {
 } from 'react-router-dom'
 import Demo from '../Components/Demo'
 
-export default class Root extends Component {
+export default class Root extends React.Component {
   render() {
     return (
       <Router>
