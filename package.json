@@ -12,8 +12,7 @@
   "scripts": {
     "start": "parcel -p 8080 index.html",
     "build": "parcel build -d build --public-url ./ ./src/index.js",
-    "prettier":
-      "prettier --config .prettierrc --write 'src/**/*.{js,jsx,css,scss,json}'",
+    "prettier": "prettier --config .prettierrc --write 'src/**/*.{js,jsx,css,scss,json}'",
     "tslint-check": "tslint-config-prettier-check ./tslint.json",
     "pre-commit": "lint-staged",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -22,7 +21,10 @@
     "type": "git",
     "url": "git+https://github.com/linmiss/react-parcel.git"
   },
-  "keywords": ["react", "parcel"],
+  "keywords": [
+    "react",
+    "parcel"
+  ],
   "author": "Tim",
   "license": "ISC",
   "bugs": {
@@ -52,6 +54,7 @@
     "@types/react": "^16.3.12",
     "@types/react-dom": "^16.0.5",
     "@types/react-router-dom": "^4.2.6",
+    "@types/recompose": "^0.26.1",
     "autoprefixer": "^8.0.0",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
@@ -60,6 +63,7 @@
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-router-dom": "^4.2.2",
+    "recompose": "^0.27.0",
     "typescript": "^2.8.3"
   }
 }
